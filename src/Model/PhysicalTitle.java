@@ -1,3 +1,7 @@
+package Model;
+
+import Enum.LiteratureType;
+
 public abstract class PhysicalTitle extends Title {
 
     private int copies;

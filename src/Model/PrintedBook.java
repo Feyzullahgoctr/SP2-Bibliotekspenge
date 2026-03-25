@@ -1,3 +1,7 @@
+package Model;
+
+import Enum.LiteratureType;
+
 public class PrintedBook extends PhysicalTitle {
 
     private int pages;

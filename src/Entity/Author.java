@@ -1,10 +1,13 @@
+package Entity;
+
+import Model.*;
 import java.util.ArrayList;
 import java.util.List;
 
 public class Author {
 
     private String name;
-    private static List<Title> titles;
+    private List<Title> titles;
 
     public Author(String name) {
         this.name = name;

@@ -1,3 +1,7 @@
+package Model;
+
+import Enum.LiteratureType;
+
 public abstract class NetTitle extends Title {
 
     private int availability;

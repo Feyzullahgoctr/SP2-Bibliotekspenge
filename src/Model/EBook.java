@@ -1,3 +1,7 @@
+package Model;
+
+import Enum.LiteratureType;
+
 public class EBook extends NetTitle {
 
     private int characters;
@@ -11,7 +15,7 @@ public class EBook extends NetTitle {
 
     @Override
     public double calculatePoints() {
-        double ebookPoint = ((double)(characters / 1800 ) + 20) * literatureType.getValue() * ((getReach() * 5) + (getAvailability() * 0.5) + getUseFactor()) ;
+        double ebookPoint = ((double)(characters / 1800 ) + 20) * literatureType.getValue() * ((getReach() * 5) + (getAvailability() * 0.5) + getUse()) ;
 
         if (illustrated) {
             ebookPoint *= 1.1;

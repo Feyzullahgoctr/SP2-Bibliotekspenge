@@ -1,3 +1,8 @@
+package Model;
+
+import Enum.LiteratureType;
+import Interface.IAudioBook;
+
 public class AudioBook extends PhysicalTitle implements IAudioBook {
 
     private int durationInMinutes;

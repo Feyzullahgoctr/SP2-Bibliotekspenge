@@ -1,9 +1,12 @@
+package Model;
+
+import Enum.LiteratureType;
 
 public abstract class Title {
 
     private String title;
     LiteratureType literatureType;
-    static final double RATE = 0.067574;
+    public static final double RATE = 0.067574;
 
     public Title(String title, LiteratureType literatureType) {
         this.title = title;

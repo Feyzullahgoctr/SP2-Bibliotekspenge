@@ -1,3 +1,8 @@
+package Model;
+
+import Enum.LiteratureType;
+import Interface.IAudioBook;
+
 public class EAudioBook extends NetTitle implements IAudioBook {
 
     private int durationInMinutes;
@@ -9,7 +14,7 @@ public class EAudioBook extends NetTitle implements IAudioBook {
 
     @Override
     public double calculatePoints() {
-        double eAudioPoint = (double)(durationInMinutes / 2) * literatureType.getValue() * ((getReach() * 5) + (getAvailability() * 0.5) + getUseFactor()) ;
+        double eAudioPoint = (double)(durationInMinutes / 2) * literatureType.getValue() * ((double)(getReach() * 5) + (double)(getAvailability() * 0.5) + getUse()) ;
 
         return eAudioPoint;
     }

@@ -1,3 +1,5 @@
+package Enum;
+
 public enum LiteratureType {
 
     BI("Billedbøger",3),
