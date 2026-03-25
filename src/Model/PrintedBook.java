@@ -13,6 +13,6 @@ public class PrintedBook extends PhysicalTitle {
 
     @Override
     public double calculatePoints() {
-        return pages * literatureType.getValue() * getCopies();
+        return pages * convertLiteratureType() * getCopies();
     }
 }
