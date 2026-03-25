@@ -15,7 +15,7 @@ public class EBook extends NetTitle {
 
     @Override
     public double calculatePoints() {
-        double ebookPoint = ((double)(characters / 1800 ) + 20) * literatureType.getValue() * ((getReach() * 5) + (getAvailability() * 0.5) + getUse()) ;
+        double ebookPoint = ((double) (characters / 1800) + 20) * convertLiteratureType() * getPseudoCopies();
 
         if (illustrated) {
             ebookPoint *= 1.1;

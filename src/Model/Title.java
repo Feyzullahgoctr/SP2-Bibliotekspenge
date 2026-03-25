@@ -15,12 +15,8 @@ public abstract class Title {
 
     public abstract double calculatePoints();
 
-    public double calculateRoyalty() {
-        return 0;
-    }
-
     public double convertLiteratureType() {
-        return 0;
+        return literatureType.getValue();
     }
 
 }

@@ -14,7 +14,7 @@ public class EAudioBook extends NetTitle implements IAudioBook {
 
     @Override
     public double calculatePoints() {
-        double eAudioPoint = (double)(durationInMinutes / 2) * literatureType.getValue() * ((double)(getReach() * 5) + (double)(getAvailability() * 0.5) + getUse()) ;
+        double eAudioPoint = (double) (durationInMinutes / 2) * convertLiteratureType() * getPseudoCopies();
 
         return eAudioPoint;
     }

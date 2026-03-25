@@ -16,11 +16,7 @@ public abstract class NetTitle extends Title {
     }
 
     public double getPseudoCopies() {
-        return 0;
-    }
-
-    public int getUseFactor() {
-        return 0;
+        return (reach * 5) + (availability * 0.5) + use;
     }
 
     public int getAvailability() {
